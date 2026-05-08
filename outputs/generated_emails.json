@@ -51,5 +51,13 @@
         "days_overdue": 8,
         "subject": "Overdue Payment Reminder for Invoice INV001",
         "body": "Dear Rajesh Pvt Ltd,\n\nWe are writing to bring to your attention that your invoice INV001, dated 15th February 2024, remains unpaid. As per our records, the amount due is \u20b945,000 and it has been 8 days since the payment was due.\n\nWe understand that unforeseen circumstances may have caused the delay, and we would appreciate it if you could settle this outstanding amount at your earliest convenience. Your prompt attention to this matter will help us avoid any further action.\n\nTo facilitate a smooth payment process, please find the invoice details below:\n\nInvoice Number: INV001\nInvoice Date: 15th February 2024\nAmount Due: \u20b945,000\n\nIf you have already made the payment, please disregard this email. However, if there are any issues or concerns regarding the invoice, kindly contact us at your earliest convenience.\n\nWe appreciate your cooperation and look forward to receiving the payment soon.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Rajesh Pvt Ltd",
+        "invoice": "INV001",
+        "tone": "Polite but Firm",
+        "days_overdue": 8,
+        "subject": "Overdue Payment Reminder for Invoice INV001",
+        "body": "**Email Body:**\n\nDear Rajesh Pvt Ltd,\n\nRe: Payment of Invoice INV001\n\nWe are writing to bring to your attention that your payment for the outstanding invoice INV001 is due. As per our records, the amount of \u20b945,000 is overdue for 8 days.\n\nWe understand that unforeseen circumstances may have caused the delay in payment. However, we kindly request that you settle this amount at your earliest convenience to avoid any additional charges.\n\nTo facilitate the payment process, please find the invoice details below:\n\n- Invoice Number: INV001\n- Amount Due: \u20b945,000\n- Payment Terms: Immediate settlement\n\nIf you have already made the payment, please disregard this email. However, if you require any assistance or clarification regarding the invoice, please do not hesitate to contact us.\n\nWe appreciate your prompt attention to this matter and look forward to receiving the payment soon.\n\nThank you for your cooperation.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
     }
 ]
