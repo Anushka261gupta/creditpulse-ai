@@ -1,0 +1,55 @@
+[
+    {
+        "client": "Rajesh Pvt Ltd",
+        "invoice": "INV001",
+        "tone": "Warm & Friendly",
+        "days_overdue": 7,
+        "email": "**Subject: Payment Reminder for Outstanding Invoice INV001**\n\nDear Rajesh Pvt Ltd Team,\n\nWe hope this email finds you well. We are writing to follow up on the outstanding payment for our invoice INV001, which was due on [Due Date]. As per our records, the amount of \u20b945,000 is now 7 days past the due date.\n\nWe understand that unforeseen circumstances can arise, and we are more than happy to work with you to find a suitable solution. However, we kindly request that you settle this outstanding amount at your earliest convenience.\n\nPlease find the invoice details below for your reference:\n\n- Invoice Number: INV001\n- Amount Due: \u20b945,000\n- Due Date: [Due Date]\n\nIf you have already made the payment, please disregard this email. If you require any assistance or have questions regarding the invoice, please do not hesitate to contact us.\n\nWe appreciate your prompt attention to this matter, and we look forward to resolving this issue amicably.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Kapoor Enterprises",
+        "invoice": "INV002",
+        "tone": "Polite but Firm",
+        "days_overdue": 12,
+        "email": "1. Subject: Overdue Payment Reminder - INV002\n\n2. Email Body:\n\nDear Kapoor Enterprises,\n\nRe: Overdue Payment for INV002\n\nWe are writing to bring to your attention that your payment for Invoice INV002 is now 12 days past due. The total amount due is \u20b978,000. We understand that unforeseen circumstances may have caused the delay, and we would like to request your prompt attention to settle this outstanding balance.\n\nPlease find the invoice details below for your reference:\n\nInvoice Number: INV002\nAmount Due: \u20b978,000\nDue Date: [Original Due Date]\n\nWe kindly request that you make the payment at your earliest convenience to avoid any further action. If you have already made the payment, please disregard this email and accept our apologies for any inconvenience caused.\n\nYou can make the payment through our bank details or online payment options available on our website. For any questions or concerns, please do not hesitate to contact us.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Sharma Tech",
+        "invoice": "INV003",
+        "tone": "Formal & Serious",
+        "days_overdue": 20,
+        "email": "Subject: Overdue Payment for Invoice INV003\n\nDear Sharma Tech Team,\n\nWe are writing to bring to your attention that the payment for Invoice INV003, amounting to \u20b9120000, is now 20 days overdue. As per our agreement, timely payment is crucial for the continuation of our services. We kindly request that you settle this outstanding amount at your earliest convenience.\n\nPlease find the invoice details below for your reference:\n\n- Invoice Number: INV003\n- Amount Due: \u20b9120000\n\nWe appreciate your prompt attention to this matter. If you have any questions or concerns regarding the payment, please do not hesitate to contact us. We are available to assist you.\n\nThank you for your cooperation.\n\nSincerely,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Rajesh Pvt Ltd",
+        "invoice": "INV001",
+        "tone": "Warm & Friendly",
+        "days_overdue": 7,
+        "subject": "Overdue Payment for Invoice INV001 - Payment Request",
+        "body": "Dear Rajesh Pvt Ltd Team,\n\nWe hope this email finds you well. We are reaching out from the Finance Team at Travel Corporation India (TCI) regarding an outstanding payment for your recent booking. As per our records, you have an overdue invoice (INV001) with a total amount due of \u20b945,000.\n\nThe invoice details are as follows:\n\n- Invoice Number: INV001\n- Amount Due: \u20b945,000\n- Due Date: [Insert Date, 7 days ago]\n\nWe understand that unforeseen circumstances may have caused the delay, and we would like to request your prompt attention to settle this outstanding amount. Your timely payment will help us maintain a smooth relationship and ensure that we can continue to provide you with excellent services.\n\nPlease find the payment options below:\n\n- Bank Transfer: [Insert Bank Details]\n- Online Payment: [Insert Online Payment Link]\n\nIf you have already made the payment, please disregard this email. However, if you require any assistance or have questions regarding the invoice, please do not hesitate to contact us.\n\nThank you for your prompt attention to this matter, and we look forward to hearing from you soon.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Kapoor Enterprises",
+        "invoice": "INV002",
+        "tone": "Polite but Firm",
+        "days_overdue": 12,
+        "subject": "1.  Overdue Payment - Invoice INV002",
+        "body": "2. Email Body:\nSubject: Overdue Payment - Invoice INV002\n\nDear Kapoor Enterprises Team,\n\nWe hope this email finds you well. This is a follow-up on the outstanding payment for our services. Our records indicate that your company, Kapoor Enterprises, has an overdue balance of \u20b978,000 (INR) for Invoice Number INV002, which was due on the original payment date.\n\nAs per our records, the invoice has been outstanding for 12 days. We kindly request that you settle this amount at your earliest convenience to avoid any further action. Please find the invoice details below for your reference:\n\nInvoice Number: INV002\nAmount Due: \u20b978,000 (INR)\nDue Date: [Original Due Date]\n\nIf you have already made the payment, please disregard this email. However, if you require any assistance or clarification regarding the invoice, please do not hesitate to contact us.\n\nWe appreciate your prompt attention to this matter and look forward to receiving the payment soon.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Sharma Tech",
+        "invoice": "INV003",
+        "tone": "Formal & Serious",
+        "days_overdue": 20,
+        "subject": "Overdue Payment - Invoice INV003 for \u20b9120,000",
+        "body": "**Email Body:**\n\nDear Sharma Tech Team,\n\nRe: Overdue Payment - Invoice INV003\n\nWe are writing to bring to your attention that the payment for Invoice INV003, amounting to \u20b9120,000, is now 20 days overdue. As per our agreement, timely payment is essential to avoid any additional charges or penalties.\n\nWe kindly request that you settle this outstanding amount at your earliest convenience. If you have already made the payment, please disregard this notice. However, if you require any clarification or assistance, please do not hesitate to contact us.\n\nPlease find the invoice details below for your reference:\n\nInvoice Number: INV003\nAmount Due: \u20b9120,000\nDue Date: [Insert Due Date]\n\nWe appreciate your prompt attention to this matter and look forward to receiving the payment soon. If you have any questions or concerns, please do not hesitate to contact the Finance Team at Travel Corporation India (TCI).\n\nThank you for your cooperation.\n\nSincerely,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Rajesh Pvt Ltd",
+        "invoice": "INV001",
+        "tone": "Polite but Firm",
+        "days_overdue": 8,
+        "subject": "Overdue Payment Reminder for Invoice INV001",
+        "body": "Dear Rajesh Pvt Ltd,\n\nWe are writing to bring to your attention that your invoice INV001, dated 15th February 2024, remains unpaid. As per our records, the amount due is \u20b945,000 and it has been 8 days since the payment was due.\n\nWe understand that unforeseen circumstances may have caused the delay, and we would appreciate it if you could settle this outstanding amount at your earliest convenience. Your prompt attention to this matter will help us avoid any further action.\n\nTo facilitate a smooth payment process, please find the invoice details below:\n\nInvoice Number: INV001\nInvoice Date: 15th February 2024\nAmount Due: \u20b945,000\n\nIf you have already made the payment, please disregard this email. However, if there are any issues or concerns regarding the invoice, kindly contact us at your earliest convenience.\n\nWe appreciate your cooperation and look forward to receiving the payment soon.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    }
+]
