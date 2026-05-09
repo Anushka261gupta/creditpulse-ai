@@ -1,7 +1,7 @@
 from groq import Groq
 
-from app.config import GROQ_API_KEY
-from app.prompts import build_email_prompt
+from config import GROQ_API_KEY
+from prompts import build_email_prompt
 
 
 client = Groq(api_key=GROQ_API_KEY)
