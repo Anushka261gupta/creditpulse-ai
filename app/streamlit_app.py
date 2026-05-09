@@ -1,10 +1,10 @@
 import os
 import streamlit as st
 
-from utils import load_invoices
-from escalation_engine import get_stage
-from email_agent import generate_email
-from audit_logger import save_email_log
+from app.utils import load_invoices
+from app.escalation_engine import get_stage
+from app.email_agent import generate_email
+from app.audit_logger import save_email_log
 
 # ---------------- PAGE CONFIG ---------------- #
 
