@@ -2,7 +2,7 @@
 
 ## Overview
 
-CreditPulse AI is an AI-powered Finance Follow-Up Agent designed to automate overdue invoice communication workflows for finance teams.
+CreditPulse AI is an AI-powered Finance Follow-Up Email Agent designed to automate overdue invoice communication workflows for finance teams.
 
 The system detects overdue invoices, applies escalation logic based on overdue duration, generates personalized AI-powered follow-up emails, maintains audit logs, and flags high-risk accounts for manual legal review.
 
@@ -98,6 +98,7 @@ Dry Run Email Dispatch
 SQLite Audit Logging
 ↓
 Dashboard Visualization
+```
 
 ---
 
@@ -147,6 +148,8 @@ Guardrails Applied:
 - dry-run testing mode
 - human-readable output validation
 
+---
+
 # Security Mitigations
 
 ## Prompt Injection
@@ -167,3 +170,148 @@ Guardrails Applied:
 ## Hallucination Mitigation
 - LLM only generates email text
 - Financial calculations handled using Python logic
+
+## Unauthorized Access
+- Local development environment used
+- No public API endpoints exposed
+
+---
+
+# Setup Instructions
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Anushka261gupta/creditpulse-ai.git
+```
+
+---
+
+## Navigate to Project
+
+```bash
+cd creditpulse-ai
+```
+
+---
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+## Activate Virtual Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Configure Secrets
+
+Create:
+
+```text
+.streamlit/secrets.toml
+```
+
+Add:
+
+```toml
+GROQ_API_KEY="your_groq_api_key"
+```
+
+---
+
+## Run Streamlit App
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+---
+
+# Project Structure
+
+```text
+creditpulse-ai/
+│
+├── app/
+│   ├── streamlit_app.py
+│   ├── email_agent.py
+│   ├── escalation_engine.py
+│   ├── audit_logger.py
+│   ├── utils.py
+│
+├── data/
+│   └── invoices.csv
+│
+├── logs/
+│
+├── outputs/
+│
+├── requirements.txt
+├── runtime.txt
+├── .env.example
+└── README.md
+```
+
+---
+
+# Sample Outputs
+
+The project generates:
+- AI-generated finance follow-up emails
+- escalation alerts
+- audit history logs
+- dashboard analytics
+
+Example outputs are available in:
+- outputs/
+- logs/
+- sample_outputs/
+
+---
+
+# Future Improvements
+
+- SendGrid / Resend integration
+- LangChain workflow orchestration
+- Admin authentication system
+- APScheduler automation
+- Email analytics dashboard
+- Real-time finance monitoring
+
+---
+
+# Demo
+
+The application demonstrates:
+- AI-powered finance automation
+- escalation-based communication
+- secure audit logging
+- dashboard analytics
+- dry-run email workflow
+
+---
+
+# Author
+
+Anushka Gupta
+
+B.Tech AIML Student  
+AI Enablement Internship Project
