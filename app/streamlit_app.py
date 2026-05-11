@@ -5,8 +5,11 @@ import pandas as pd
 from utils import load_invoices
 from escalation_engine import get_stage
 from email_agent import generate_email
-from audit_logger import save_email_log
-
+from audit_logger import (
+    save_email_log,
+    fetch_logs,
+    init_db
+)
 
 # ---------------- PAGE CONFIG ---------------- #
 
@@ -14,6 +17,8 @@ st.set_page_config(
     page_title="CreditPulse AI",
     layout="wide"
 )
+
+init_db()
 
 
 # ---------------- HEADER ---------------- #
@@ -274,3 +279,34 @@ for _, row in df.iterrows():
             st.error(
                 f"Error generating email: {str(e)}"
             )
+
+
+# ---------------- AUDIT HISTORY ---------------- #
+st.divider()
+
+st.subheader("Audit History")
+
+
+logs = fetch_logs()
+
+if logs:
+
+    logs_df = pd.DataFrame(
+        logs,
+        columns=[
+            "ID",
+            "Client",
+            "Invoice",
+            "Tone",
+            "Days Overdue",
+            "Subject",
+            "Body",
+            "Timestamp"
+        ]
+    )
+
+    st.dataframe(logs_df)
+
+else:
+
+    st.info("No audit logs available")
