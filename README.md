@@ -98,3 +98,72 @@ Dry Run Email Dispatch
 SQLite Audit Logging
 ↓
 Dashboard Visualization
+
+---
+
+# Agent Framework
+
+This project follows a lightweight single-agent workflow architecture implemented using Python modules and Streamlit orchestration.
+
+Instead of using a heavy multi-agent framework, the system was designed as a modular pipeline consisting of:
+- escalation_engine.py
+- email_agent.py
+- audit_logger.py
+- Streamlit UI workflow
+
+Architecture Type:
+- Single-Agent Workflow
+- Sequential Processing Pipeline
+- Rule-Based Escalation + LLM Generation
+
+This architecture was chosen because:
+- lightweight execution
+- simpler debugging
+- faster deployment
+- easier maintainability
+- suitable for finance workflow automation
+
+---
+
+# Prompt Design
+
+The email generation prompt was carefully structured to ensure:
+- professional finance communication
+- tone consistency
+- invoice-specific personalization
+- controlled LLM behaviour
+
+The prompt dynamically injects:
+- client name
+- invoice number
+- amount due
+- overdue duration
+- escalation tone
+
+Guardrails Applied:
+- structured invoice input
+- controlled prompt template
+- no unrestricted user prompt injection
+- dry-run testing mode
+- human-readable output validation
+
+# Security Mitigations
+
+## Prompt Injection
+- Structured prompts used
+- Limited invoice context passed to LLM
+
+## API Key Protection
+- Secrets stored using Streamlit Secrets
+- API keys excluded using .gitignore
+
+## Email Safety
+- Dry-run mode used during testing
+- Prevents accidental client email delivery
+
+## Audit Logging
+- SQLite logging for transparency and traceability
+
+## Hallucination Mitigation
+- LLM only generates email text
+- Financial calculations handled using Python logic
