@@ -177,6 +177,21 @@ for _, row in df.iterrows():
                 height=250
             )
 
+            full_email = f"""
+            Subject:
+            {email['subject']}
+
+            Body:
+            {email['body']}
+            """
+
+            st.download_button(
+                label="Download Email",
+                data=full_email,
+                file_name=f"{row['invoice_no']}_email.txt",
+                mime="text/plain"
+            )
+
             # Save audit log
 
             log_data = {
