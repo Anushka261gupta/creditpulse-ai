@@ -24,7 +24,7 @@ def parse_email_response(email_text):
 
             break
 
-    return {
-        "subject": subject,
-        "body": body
-    }
+    return EmailResponse(
+        subject=subject,
+        body=body
+    )
