@@ -67,5 +67,13 @@
         "days_overdue": 10,
         "subject": "Overdue Payment for Invoice INV001 - \u20b945,000",
         "body": "Dear Rajesh Pvt Ltd,\n\nRe: Overdue Payment for Invoice INV001\n\nWe are writing to bring to your attention that your payment for the invoice INV001, amounting to \u20b945,000, is now 10 days past due. We understand that unforeseen circumstances may have caused the delay, but we kindly request that you settle this outstanding amount at your earliest convenience.\n\nAs per our agreement, we expect prompt payment to avoid any additional charges. We appreciate your prompt attention to this matter and look forward to receiving the payment soon.\n\nPlease find the invoice details below for your reference:\n\n- Invoice Number: INV001\n- Amount Due: \u20b945,000\n- Due Date: [Original Due Date]\n\nIf you have already made the payment or have any questions regarding this invoice, please do not hesitate to contact us. We are more than happy to assist you.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nFinance Team\nTravel Corporation India (TCI)"
+    },
+    {
+        "client": "Kapoor Enterprises",
+        "invoice": "INV002",
+        "tone": "Formal & Serious",
+        "days_overdue": 15,
+        "subject": "Overdue Payment for Invoice INV002",
+        "body": "Dear Kapoor Enterprises,\n\nRe: Overdue Payment for Invoice INV002\n\nWe are writing to bring to your attention that the payment for Invoice INV002, amounting to \u20b978,000, is now 15 days overdue. As per our agreement, timely payment is essential to avoid any late charges or penalties.\n\nWe kindly request that you settle this outstanding amount at your earliest convenience. If you have any questions or concerns regarding this invoice, please do not hesitate to contact our Finance Team.\n\nPlease find the details of the invoice below:\n\n- Invoice Number: INV002\n- Amount Due: \u20b978,000\n- Due Date: [Insert Due Date]\n\nWe appreciate your prompt attention to this matter and look forward to receiving the payment soon.\n\nSincerely,\nFinance Team\nTravel Corporation India (TCI)"
     }
 ]

@@ -1,7 +1,7 @@
 import pandas as pd
 
-def load_invoices(csv_path):
+def load_invoices(file):
 
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(file)
 
     return df

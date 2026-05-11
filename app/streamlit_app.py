@@ -47,7 +47,19 @@ csv_path = os.path.join(
     "invoices.csv"
 )
 
-df = load_invoices(csv_path)
+uploaded_file = st.file_uploader(
+    "Upload Invoice CSV",
+    type=["csv"]
+)
+
+if uploaded_file is not None:
+
+    df = load_invoices(uploaded_file)
+
+else:
+
+    st.warning("Please upload a CSV file")
+    st.stop()
 
 
 # ---------------- METRICS ---------------- #
