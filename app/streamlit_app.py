@@ -1,10 +1,12 @@
 import os
 import streamlit as st
+import pandas as pd
 
 from utils import load_invoices
 from escalation_engine import get_stage
 from email_agent import generate_email
 from audit_logger import save_email_log
+
 
 # ---------------- PAGE CONFIG ---------------- #
 
@@ -87,6 +89,42 @@ col2.metric(
 col3.metric(
     "Legal Escalations",
     legal_cases
+)
+
+st.subheader("Invoice Analytics")
+
+
+# Tone distribution
+
+tone_counts = []
+
+for _, row in df.iterrows():
+
+    tone, _ = get_stage(row["due_date"])
+
+    tone_counts.append(tone)
+
+
+tone_df = pd.DataFrame({
+    "Tone": tone_counts
+})
+
+
+st.write("### Escalation Distribution")
+
+st.bar_chart(
+    tone_df["Tone"].value_counts()
+)
+
+
+# Amount analytics
+
+st.write("### Outstanding Amount Distribution")
+
+amount_df = df[["client_name", "amount"]]
+
+st.bar_chart(
+    amount_df.set_index("client_name")
 )
 
 
