@@ -234,10 +234,10 @@ for _, row in df.iterrows():
 
             full_email = f"""
             Subject:
-            {email['subject']}
+            {email.subject}
 
             Body:
-            {email['body']}
+            {email.body}
             """
 
             st.download_button(
