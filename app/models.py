@@ -1,3 +1,10 @@
+from pydantic import BaseModel
+
+class EmailResponse(BaseModel):
+
+    subject: str
+    body: str
+
 def parse_email_response(email_text):
 
     subject = ""
