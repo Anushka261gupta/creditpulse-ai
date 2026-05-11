@@ -99,7 +99,7 @@ col3.metric(
 st.subheader("Invoice Analytics")
 
 
-# Tone distribution
+# ---------------- TONE DISTRIBUTION ---------------- #
 
 tone_counts = []
 
@@ -109,11 +109,9 @@ for _, row in df.iterrows():
 
     tone_counts.append(tone)
 
-
 tone_df = pd.DataFrame({
     "Tone": tone_counts
 })
-
 
 st.write("### Escalation Distribution")
 
@@ -122,7 +120,7 @@ st.bar_chart(
 )
 
 
-# Amount analytics
+# ---------------- AMOUNT ANALYTICS ---------------- #
 
 st.write("### Outstanding Amount Distribution")
 
@@ -159,7 +157,7 @@ for _, row in df.iterrows():
         f"Days Overdue: {overdue_days}"
     )
 
-    # Tone styling
+    # ---------------- TONE STYLING ---------------- #
 
     if tone == "Warm & Friendly":
 
@@ -186,7 +184,7 @@ for _, row in df.iterrows():
         )
 
 
-    # Legal escalation
+    # ---------------- LEGAL ESCALATION ---------------- #
 
     if tone == "Escalate to Legal":
 
@@ -197,7 +195,7 @@ for _, row in df.iterrows():
         continue
 
 
-    # Generate button
+    # ---------------- GENERATE EMAIL ---------------- #
 
     if st.button(
         f"Generate Email for {row['invoice_no']}",
@@ -221,24 +219,26 @@ for _, row in df.iterrows():
             st.write("### Subject")
 
             st.write(
-                email["subject"]
+                email.subject
             )
 
             st.write("### Body")
 
             st.text_area(
                 "Generated Email Body",
-                email["body"],
+                email.body,
                 height=250
             )
 
-            full_email = f"""
-            Subject:
-            {email.subject}
+            # ---------------- DOWNLOAD EMAIL ---------------- #
 
-            Body:
-            {email.body}
-            """
+            full_email = f"""
+Subject:
+{email.subject}
+
+Body:
+{email.body}
+"""
 
             st.download_button(
                 label="Download Email",
@@ -247,7 +247,13 @@ for _, row in df.iterrows():
                 mime="text/plain"
             )
 
-            # Save audit log
+            # ---------------- DRY RUN SEND ---------------- #
+
+            st.success(
+                f"Email successfully simulated for {row['client_name']}"
+            )
+
+            # ---------------- AUDIT LOG ---------------- #
 
             log_data = {
 
@@ -264,10 +270,10 @@ for _, row in df.iterrows():
                 overdue_days,
 
                 "subject":
-                email["subject"],
+                email.subject,
 
                 "body":
-                email["body"]
+                email.body
             }
 
             save_email_log(
@@ -282,10 +288,10 @@ for _, row in df.iterrows():
 
 
 # ---------------- AUDIT HISTORY ---------------- #
+
 st.divider()
 
 st.subheader("Audit History")
-
 
 logs = fetch_logs()
 
