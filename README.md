@@ -126,6 +126,19 @@ This architecture was chosen because:
 
 ---
 
+---
+# Structured Output Validation
+
+Pydantic models were implemented for validating AI-generated email responses and maintaining consistent output formatting.
+
+Benefits:
+- reduced parsing errors
+- cleaner response handling
+- type-safe AI outputs
+- improved maintainability
+
+---
+
 # Prompt Design
 
 The email generation prompt was carefully structured to ensure:
@@ -149,6 +162,26 @@ Guardrails Applied:
 - human-readable output validation
 
 ---
+
+---
+
+# Prompt Iterations
+
+Initial prompts generated generic reminder emails.
+
+The prompt was later refined to:
+- dynamically inject invoice details
+- maintain escalation tone consistency
+- avoid hallucinated payment information
+- generate professional finance communication
+
+Final prompt design focused on:
+- clarity
+- professionalism
+- escalation control
+- personalization
+
+--- 
 
 # Security Mitigations
 
