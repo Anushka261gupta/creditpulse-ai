@@ -1,8 +1,9 @@
+
 from groq import Groq
 
 from config import GROQ_API_KEY
 from prompts import build_email_prompt
-
+from models import EmailResponse
 
 client = Groq(api_key=GROQ_API_KEY)
 
@@ -32,10 +33,10 @@ def parse_email_response(email_text):
 
             break
 
-    return {
-        "subject": subject,
-        "body": body
-    }
+return EmailResponse(
+    subject=subject,
+    body=body
+)
 
 def generate_email(
     client_name,
